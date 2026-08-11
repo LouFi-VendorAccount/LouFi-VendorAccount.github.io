@@ -1,0 +1,160 @@
+---
+---
+/* Import LouFi Typefaces */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=League+Spartan:wght@600&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto+Mono:wght@400;600&display=swap');
+
+:root {
+  /* Primary Colors */
+  --color-louisville-slate: #3C4858;
+  --color-fleur-de-lis-gold: #F2C94C;
+  --color-crisp-white: #FFFFFF;
+  --color-paragraph-gray: #4F4F4F;
+
+  /* Secondary Accents */
+  --color-river-navy: #1C2A3A;
+  --color-muted-teal: #2E8B9A;
+  --color-louisville-brick: #C85A32;
+
+  /* Functional & Status States */
+  --color-emerald-green: #27AE60;
+  --color-amber-orange: #E67E22;
+  --color-crimson-red: #EB5757;
+  --color-soft-cobalt: #4B7BEC;
+
+  /* Neutral Extensions & Surfaces */
+  --color-steel-gray: #EAECEE;
+  --color-charcoal-slate: #1C232B;
+}
+
+/* Base Body Styling */
+body {
+  font-family: 'Lato', sans-serif; /* Standard body text */
+  font-weight: 400;
+  color: var(--color-paragraph-gray); /* Light mode body text */
+  background-color: var(--color-crisp-white);
+  line-height: 1.6;
+}
+
+/* Headings Base Color */
+h1, h2, h3, h4, h5, h6, .display-title {
+  color: var(--color-louisville-slate);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Display Titles & Subtitles */
+.display-title {
+  font-family: 'League Spartan', sans-serif; /* Title font */
+  font-weight: 600;
+}
+
+.subtitle {
+  font-family: 'Lato', sans-serif; /* Subtitle font */
+  font-weight: 700;
+  color: var(--color-paragraph-gray);
+  line-height: 1.6;
+}
+
+/* Typography Hierarchy */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Montserrat Bold */
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Montserrat Semi Bold */
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Montserrat Semi Bold */
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Montserrat Medium */
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Montserrat Normal */
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: italic; /* Montserrat Normal Italic */
+}
+
+/* Links & Active States */
+a {
+  color: var(--color-muted-teal);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: var(--color-river-navy);
+  text-decoration: underline;
+}
+
+/* Monospace Data Blocks & Code */
+code, pre, kbd, samp {
+  font-family: 'Roboto Mono', monospace;
+}
+
+p code, li code {
+  background-color: var(--color-steel-gray);
+  color: var(--color-river-navy);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: var(--color-steel-gray);
+  color: var(--color-river-navy);
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Accent Badges & Functional Callouts */
+.badge-gold, mark {
+  background-color: var(--color-fleur-de-lis-gold);
+  color: var(--color-louisville-slate); /* Required for WCAG AA compliance */
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+}
+
+.status-connected, .badge-success {
+  color: var(--color-emerald-green);
+}
+
+.status-warning {
+  color: var(--color-amber-orange);
+}
+
+.status-error {
+  color: var(--color-crimson-red);
+}
+
+.status-info {
+  color: var(--color-soft-cobalt);
+}
+
+/* Dark Mode Surface Overrides */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-charcoal-slate); /* Base dark mode surface */
+    color: #E2E8F0; /* Dark mode body copy */
+  }
+
+  h1, h2, h3, h4, h5, h6, .display-title {
+    color: var(--color-crisp-white);
+  }
+
+  p code, li code, pre {
+    background-color: var(--color-charcoal-slate);
+    color: #E2E8F0;
+  }
+}
