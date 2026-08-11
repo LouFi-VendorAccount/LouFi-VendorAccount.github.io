@@ -4,8 +4,6 @@ title: Frequently asked questions
 permalink: /faq/
 ---
 
-If you're reading this on paper, you can go to loufi.net for an updated list of FAQs.
-
 # Business FAQs
 
 ## Do I pay you? 
