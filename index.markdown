@@ -19,7 +19,7 @@ We believe in supporting public access to convenient, high quality technology in
 
 # Want to learn more?
 
-Check out our [frequently asked questions](/faq/).
+Check out our [frequently asked questions](/info/).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEBmwbl40HWrpjn5DxEKF0joDOuFvOXPZw1EDxyN9LCp8hKg/viewform?embedded=true" width="640" height="1189" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
